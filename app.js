@@ -51,10 +51,10 @@ function editPost() {
   var title = card.children[1].children[0].children[0].innerText;
   var description = card.children[1].children[0].children[1].innerText;
   Swal.fire({
-    icon: "info",
-    title: "Edit Mode Activated",
-    text: "You can now update your post",
-    confirmButtonText: "Continue"
+    icon: "question",
+    title: "Edit post",
+    text: "You want to update this post",
+    confirmButtonText: "Yes, edit it!"
   }).then(() => {
     document.getElementById("title").value = title;
     document.getElementById("description").value = description;

@@ -1,0 +1,221 @@
+/* ---------------- BODY ---------------- */
+body {
+    background-color: #eef2f7;
+    margin: 0;
+    font-family: 'Segoe UI',Arial, sans-serif;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+    background: linear-gradient(90deg, #607d8b, #455a64);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand,
+.nav-link {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #cfd8dc !important;
+    text-decoration: underline;
+}
+
+/* ---------------- LOGIN & SIGNUP ---------------- */
+.login-form,
+.signup-form {
+    width: 400px;
+    padding: 40px 30px;
+    background: #607d8b;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#logincontainer{
+     text-align: center;
+     margin-top: 15px;
+}
+
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+input:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.login-form button {
+    width: 220px;
+    margin: 10px auto;
+    display: block;
+    padding: 12px 20px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #26a69a, #00796b);
+    border: none;
+    color: #cfd8dc;
+}
+
+
+.signup-form button {
+    width: 320px;
+}
+
+.loginCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+}
+
+.login-form button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #00796b, #004d40);
+    cursor: pointer;
+}
+
+/* ---------------- POSTS ---------------- */
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    transition: 1s;
+   
+}
+.card:hover {
+
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    background-color: #cfd8dc;
+    font-weight: 600;
+    color: #455a64;
+    font-size: 0.95rem;
+    padding: 10px 15px;
+    border-bottom: 1px solid #b0bec5;
+}
+
+.card-body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 180px;
+    position: relative;
+    padding: 20px;
+    color: #023d36;
+}
+
+.card-text {
+    color: #004d40;
+}
+
+
+/* ---------------- CARD BUTTONS ---------------- */
+.color {
+    border-radius: 15px;
+    padding: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.color:hover {
+    background-color: rgba(18, 146, 131, 0.493);
+    color: #333;
+}
+.editBtn{
+    color: #00796b;
+   width: 60px;
+}
+.delectBtn{
+
+color: #e53935;
+width: 70px;
+}
+.delectBtn:hover{
+    background-color: #e53935 !important;
+    color: #fff;
+}
+
+
+/* Like button */
+.liked {
+    color: #e53935 !important;
+}
+
+/* Post button inside card */
+.card .btn-primary {
+    width: auto;
+    min-width: 120px;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #26a69a, #00796b);
+    /* box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); */
+    transition: 0.3s;
+}
+
+.card .btn-primary:hover {
+    transform: scale(1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #00796b, #004d40);
+}
+
+/* ---------------- IMAGE SELECTION ---------------- */
+.images img {
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    margin-right: 10px;
+  
+}
+
+.images img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  
+}
+
+a{
+    color: #004d40;
+    text-decoration: none;
+}
+
+.addImg {
+    border: 2px solid #036158 !important;
+}
+
+.form-control:focus {
+    border-color: #26a69998;
+    box-shadow: 0 0 0 0.2rem #015f54c4 !important;
+}
+#postContainer{
+    display: none;
+}
+
+/* ---------------- SWEETALERT ---------------- */
+.swal2-popup {
+    font-size: 16px !important;
+}
+
+.swal2-confirm {
+    background-color: #26a69a !important;
+    color: #fff !important;
+}

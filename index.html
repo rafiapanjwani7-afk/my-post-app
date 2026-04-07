@@ -46,7 +46,7 @@
     </div>
   </div>
 
-  <div class="container mt-5" id="postContainer">
+  <div class="container ptCont mt-5" id="postContainer">
     <div class="row">
       <div class="col-sm-12 col-md-6 col-lg-4">
         <div class="card p-3 m-2">
@@ -66,7 +66,25 @@
             <img class="bgImg" onclick="addImg('./images/3.webp')" src="./images/3.webp" alt="">
             <img class="bgImg" onclick="addImg('./images/2.webp')" src="./images/2.webp" alt="">
           </div>
-          <button onclick="post()" type="submit" class="btn btn-primary ms-auto">
+          <label class="form-label ">Text Color</label>
+                    <div class="color-div d-flex flex-wrap justify-content-around">
+                        <div class="colorbox"
+                            style="background-color: #b96c9a; width: 45px; height: 45px; border-radius: 12%;"
+                            onclick="applycolor(this)"></div>
+                        <div class="colorbox"
+                            style="background-color: #e49287; width: 45px; height: 45px; border-radius: 12%;"
+                            onclick="applycolor(this)"></div>
+                        <div class="colorbox"
+                            style="background-color: #4f9ea8; width: 45px; height: 45px; border-radius: 12%;"
+                            onclick="applycolor(this)"></div>
+                        <div class="colorbox"
+                            style="background-color: #c2bb76; width: 45px; height: 45px; border-radius: 12%;"
+                            onclick="applycolor(this)"></div>
+                        <div class="colorbox"
+                            style="background-color: #026857; width: 45px; height: 45px; border-radius: 12%;"
+                            onclick="applycolor(this)"></div>
+                    </div>
+          <button onclick="post()" type="submit" class="btn btn-primary ms-auto postbtn">
             Post
           </button>
         </div>

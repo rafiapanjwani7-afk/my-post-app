@@ -1,5 +1,6 @@
 var editCard = null;
 var cardBg = "";
+var selectedTextColor = "";
 var time = moment().format("MMMM Do YYYY, h:mm:ss a");
 var loginPt = false;
 var currentUser = "";
@@ -96,8 +97,8 @@ function post() {
     </div>
     <div class="card-body p-2" style="background-image:url(${cardBg}); background-size:cover;">
       <blockquote class="blockquote">
-        <p class="p-2">${title.value}</p>
-        <footer class="blockquote-footer p-2 card-text">${description.value}</footer>
+        <p class="p-2" style="color:${selectedTextColor};">${title.value}</p>
+        <footer class="blockquote-footer p-2 card-text" style="color:${selectedTextColor};">${description.value}</footer>
       </blockquote>
     </div>
       <div class="d-flex gap-4 ms-auto mt-1 mb-1 ">
@@ -146,4 +147,16 @@ function addImg(src) {
     bgImg[i].className = "bgImg"
   }
   event.target.classList.add("addImg");
+}
+function applycolor(element) {
+    var colorbox = document.getElementsByClassName('colorbox');
+
+    for (var i = 0; i < colorbox.length; i++) {
+        colorbox[i].classList.remove('selected');
+    }
+
+    element.classList.add('selected');
+
+    // DO NOT USE let or var here
+    selectedTextColor = element.style.backgroundColor; 
 }

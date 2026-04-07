@@ -177,6 +177,11 @@ width: 70px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     background: linear-gradient(135deg, #00796b, #004d40);
 }
+.postbtn{
+    width: 100% !important;
+    padding: 12px 20px;
+   margin-top: 10px;
+}
 
 /* ---------------- IMAGE SELECTION ---------------- */
 .images img {
@@ -208,7 +213,22 @@ a{
 }
 #postContainer{
     display: none;
+    justify-content: center;
+    align-items: center;
 }
+.ptCont{
+position: sticky;
+}
+.colorbox {
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.colorbox.selected {
+     border: 2px solid #036158 !important;
+    transform: scale(1.2);
+}
+
 
 /* ---------------- SWEETALERT ---------------- */
 .swal2-popup {
